@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from 'react';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -20,20 +20,24 @@ export default function Home() {
       {/* Content */}
       <div className="relative z-10 text-center">
         <div className="flex flex-col items-center mb-8">
-          <img 
+          <Image 
             src="/logo_isotipe.svg" 
             alt="Tradoxus Logo" 
-            className="w-32 h-32 mb-4 opacity-0 animate-fade-in"
+            width={128}
+            height={128}
+            className="mb-4 opacity-0 animate-fade-in"
           />
-          <img 
+          <Image 
             src="/tradoxus_imgtp.svg" 
             alt="Tradoxus Text" 
-            className="h-12 opacity-0 animate-fade-in"
+            width={200}
+            height={48}
+            className="opacity-0 animate-fade-in"
             style={{ animationDelay: '0.5s' }}
           />
         </div>
         <h1 className="text-4xl md:text-6xl font-bold mb-4">Coming Soon</h1>
-        <p className="text-xl md:text-2xl text-gray-300 mb-8">We're working on something amazing!</p>
+        <p className="text-xl md:text-2xl text-gray-300 mb-8">We&apos;re working on something amazing!</p>
       </div>
 
       {/* Social Links */}
